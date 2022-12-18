@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus SC', serif;
+}
+
+img{
+    width:100px;
+    height:100px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.collapse{
+    background-color: #C3DFE9;
+    height:90px;
+    /* padding: 5px 20px 5px 20px; */
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+}
+
+.left-side-nav ul,.right-side-nav ul,.title{
+    /* background-color: #20c997; */
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+/* left side of nav bar */
+.left-side-nav ul{
+    width:200px;
+
+}
+/* right side of nav bar */
+.right-side-nav ul{
+    width:600px;
+}
+.user_image{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+* ul li,li a, .nav-item a, .title a{
+    color: #343a40;
+}
+ .nav-item a, .title a:hover{
+    color: #343a40;
+}
+.sign-in{
+    text-decoration: none;
+    
+}
+i.fas{
+    margin-right: 12px;
+    font-size: 18px;
+}
+.navbar-nav{
+    padding-right: 20px;
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:15px;
+}
+
+.hero-section{
+    height: 100vh;
+    /* background-image: url("../images/brett-jordan-qF_KGJbgsOo-unsplash.jpg");
+    background-size:contain;
+    background-repeat: no-repeat; */
+}
+
+/* style grid container */
+/* .grid-container{
+width:60% ;
+height:400px;
+/* padding: 10px; */
+/* margin: 0 auto; */
+/* background-color: beige; */
+/* display: grid; */
+/* grid-template-columns: 400px 400px;
+align-items:center; */
+/* justify-content: center; */
+/* gap:200px; */
+/* column-gap: 15px; */
+/* } */ 
+ a .signin-btn{
+    background-color:#323C83;
+    color: #fff;
+    padding: 5px 20px;
+    border-color:#343a40;
+}
+a .signin-btn:hover{
+    background-color:#3c4799;
+    color:#fff;
+    border-color:#343a40;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card-body {
+    border-left: 15px groove #C3DFE9;
+}
+
+.mainimg{
+    width:70%;
+    height:95%;
+}
+
+.brainimg {
+    width: 300px;
+    height: 300px;
+}
+
+#landing_pg_container {
+    max-width: 50%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/******************* JOURNAL PAGE STYLE ********/
+li a{
+    text-decoration: none;
+}
+
+/* card part */
+.my-3.card-box{
+    margin: 0 auto;
+}
+
+.actGoal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* description and quote part */
+.col.my-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quotes{
+
+    color: #495057;
+}
+.quotes h5{
+    text-align: center;
+    font-size: 16px;
+}
+.quotes h6{
+
+    text-align: center;
+    font-size: 14px;
+}
+/****************************/
+
+/* footer */
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+footer{
+    font-size: 14px;
+    color: #343a40;
+}
+.social-icon{
+    width:30%;
+    margin: 0 auto;
+}
+
+.disclaimer{
+    font-size: 0.6em;
+}
+/* emoji images */
+.heads {
+    width: 50px;
+    height: 50px;
+}
+
+/* popup delete box */
+
+
+/* ***********animation part  for mindfull journey and taking step to be the best you in home page ************************************* */
+h2.fs-1{
+    color: rgb(59, 59, 59);
+    letter-spacing: 15px;
+    animation: moveInleft 3s ease-out;
+ 
+    
+    }
+    h4.mb-3{
+    color: rgb(59, 59, 59);
+    letter-spacing: 4px;
+    animation: moveInRight 3s ease-out;
+    margin-bottom: 60px;;
+    }
+
+    /* implement key frame animation  moveinleft for mindful journey */
+    @keyframes moveInleft{
+        /* start point */
+        0%{ 
+            opacity:0;
+            /* translate x becuase we want to shift text fron left to right and left mean negative value */
+            transform: translateX(-100px);
+        }
+        /* middle point */
+        50%{
+            /* positive value means shift to left and from right to left positive value */
+            transform: translateX(10px);
+    
+        }
+        /* endpoint */
+        100%{
+            opacity:1;
+            /* translate 0 means back to origin */
+            transform: translate(0px);
+        }
+    }
+    /* implement key frame animation  moveinright  for taking steps to be the best you*/
+    @keyframes moveInRight{
+        /* start point */
+        0%{ 
+            opacity:0;
+            /* translate x becuase we want to shift text fron left to right and left mean negative value */
+            transform: translateX(100px);
+        }
+        /* middle point */
+        50%{
+            /* positive value means shift to left and from right to left (positive value) */
+            transform: translateX(-10px);
+    
+        }
+        /* endpoint */
+        100%{
+            opacity:1;
+            /* translate 0 means back to origin */
+            transform: translate(0px);
+        }
+    }
+    

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus SC', serif;
+}
+
+.login,.register_container{
+    height: 100vh;
+    background-image: url("../images/mental-health-gd1b43a6ca_1920.png");
+    background-size:cover;
+    /* background-position:center; */
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+/* style login form */
+.login-form{
+    /* background-color:rgb(167, 72, 72); */
+    width:500px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    /* background-color: aquamarine; */
+}
+
+#email, #password,.input{
+    height:30px;
+    width:200px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding-left: 12px;;
+
+}
+#signin{
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+.email-section,.password-section{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+svg{
+    width:35px;
+    height:35px;
+    fill: rgb(73, 71, 71);
+    /* fill:#CBA587; */
+}
+
+.register{
+    display: flex;
+     align-items: flex-start;
+    gap:10px;
+}
+.register p,.register a{
+    margin-top: 0px;
+    font-size: 14px;
+    color: black;
+}
+
+/* sign up style */
+/* * ***********************registration form style***************************************** */ */
+.register_container{
+    width:85%;
+    height:100vh;
+    background-color: gray;
+  
+
+}
+h3{
+  text-align: center;
+}
+
+.signup-form{
+    padding:60px;
+    width:60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+}
+.signup-form  div{
+    display: flex;
+    justify-content:space-between;
+    gap:5px;
+    /* background-color: red; */
+
+}
+button.signup-btn{
+    width:150px;
+    align-self: center;
+    background-color: #5294ac;
+    
+ }
+ button.signup-btn:hover{
+    background-color: #a3cbd9;
+ }
+.input{
+    width:60%;
+    padding-left: 10px;
+}
+.error ul li{
+    background-color: rgb(136, 133, 133);
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.collapse{
+    background-color: #C3DFE9;
+    height:90px;
+    /* padding: 5px 20px 5px 20px; */
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+}
+img{
+    width:90px;
+    height:90px;
+}
+.left-side-nav ul,.right-side-nav ul,.title{
+    /* background-color: #20c997; */
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+/* left side of nav bar */
+.left-side-nav ul{
+    width:200px;
+
+}
+/* right side of nav bar */
+.right-side-nav ul{
+    width:500px;
+}
+
+* ul li,li a, .nav-item a, .title a{
+    color: #343a40;
+}
+ .nav-item a, .title a:hover{
+    color: #343a40;
+}
+
+.navbar-nav{
+    padding-right: 20px;
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:15px;
+}
+a .signin-btn{
+    background-color: #339af0;
+    color: #343a40;
+    padding: 5px 20px;
+    border-color:#343a40;
+
+}
+a .signin-btn:hover{
+    background-color: #2574be;
+    color: #343a40;
+    border-color:#343a40;
+}
